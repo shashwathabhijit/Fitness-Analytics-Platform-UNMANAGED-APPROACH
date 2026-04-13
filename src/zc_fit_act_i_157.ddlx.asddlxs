@@ -1,0 +1,29 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Workout', typeNamePlural: 'Workouts', title: { value: 'ActType' } } }
+annotate entity ZC_FIT_ACT_I_157 with
+{
+  @UI.facet: [ { id: 'Item', type: #IDENTIFICATION_REFERENCE, label: 'Workout Stats', position: 10 } ]
+  
+  @UI.hidden: true
+  UserId;
+  
+  @EndUserText.label: 'Log ID'
+  @UI: { lineItem: [{position: 10}], identification: [{position: 10}] }
+  ActivityId;
+  
+  @EndUserText.label: 'Activity Type'
+  @UI: { lineItem: [{position: 20, criticality: 'TypeCrit'}], identification: [{position: 20}] }
+  ActType;
+  
+  @EndUserText.label: 'Duration (Mins)'
+  @UI: { lineItem: [{position: 30}], identification: [{position: 30}] }
+  DurationMins;
+
+  @EndUserText.label: 'Calories Burned'
+  @UI: { lineItem: [{position: 40}], identification: [{position: 40}] }
+  CaloriesBurned;
+
+  @EndUserText.label: 'Avg Heart Rate'
+  @UI: { lineItem: [{position: 50}], identification: [{position: 50}] }
+  AvgHeartRate;
+}

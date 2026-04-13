@@ -1,0 +1,56 @@
+//unmanaged implementation in class zbp_i_fit_prof_h_157 unique;
+//strict ( 2 );
+//
+//define behavior for ZI_FIT_PROF_H_157 //alias <alias_name>
+////late numbering
+//lock master
+//authorization master ( instance )
+////etag master <field_name>
+//{
+//  create ( authorization : global );
+//  update;
+//  delete;
+//  field ( readonly ) UserId;
+//  association _Activities { create; }
+//}
+//
+//define behavior for ZI_FIT_ACT_I_157 //alias <alias_name>
+////late numbering
+//lock dependent by _Profile
+//authorization dependent by _Profile
+////etag master <field_name>
+//{
+//  update;
+//  delete;
+//  field ( readonly ) UserId, ActivityId;
+//  association _Profile;
+//}
+unmanaged implementation in class zbp_i_fit_prof_h_157 unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZI_FIT_PROF_H_157 alias Profile
+draft table zdfit_prof_h
+lock master total etag LastChangedAt
+authorization master ( instance )
+etag master LocLastChgAt
+{
+  create ( authorization : global ); update; delete;
+  association _Activities { create; with draft; }
+  draft action Edit; draft action Resume; draft determine action Prepare;
+  draft action Activate optimized; draft action Discard;
+  field ( readonly : update ) UserId;
+}
+
+define behavior for ZI_FIT_ACT_I_157 alias Activities
+implementation in class zbp_i_fit_act_i_157 unique
+draft table zdfit_act_i
+lock dependent by _Profile
+authorization dependent by _Profile
+etag master LocLastChgAt
+{
+  update; delete;
+  association _Profile { with draft; }
+  field ( readonly ) UserId;
+  field ( readonly : update ) ActivityId;
+}

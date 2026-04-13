@@ -1,0 +1,5 @@
+@EndUserText.label: 'Fitness Platform Service'
+define service ZUI_FIT_PLAT_157 {
+  expose ZC_FIT_PROF_H_157 as Profile;
+  expose ZC_FIT_ACT_I_157  as Activities;
+}

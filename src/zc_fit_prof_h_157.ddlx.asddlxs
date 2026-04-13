@@ -1,0 +1,195 @@
+//@Metadata.layer: #CORE
+//@UI: { headerInfo: { typeName: 'Fitness Profile', typeNamePlural: 'Profiles', title: { value: 'FullName' } } }
+//annotate entity ZC_FIT_PROF_H_157 with
+//{
+//  @UI.facet: [ 
+//    { id: 'HealthDP', purpose: #HEADER, type: #DATAPOINT_REFERENCE, targetQualifier: 'HealthData', position: 10 },
+//    { id: 'ProfInfo', type: #COLLECTION, label: 'Profile Details', position: 10 },
+//    { id: 'BasicData', parentId: 'ProfInfo', type: #FIELDGROUP_REFERENCE, label: 'Metrics', targetQualifier: 'BasicGrp', position: 10 },
+//    { id: 'Logs', type: #LINEITEM_REFERENCE, label: 'Activity Logs', position: 20, targetElement: '_Activities' } 
+//  ]
+//
+//  @EndUserText.label: 'User ID'
+//  @UI.selectionField: [{ position: 10 }]
+//  @UI.lineItem:       [{ position: 10 }]
+//  @UI.fieldGroup:     [{ position: 10, qualifier: 'BasicGrp' }]
+//  UserId;
+//
+//  @EndUserText.label: 'Full Name'
+//  @UI.selectionField: [{ position: 20 }]
+//  @UI.lineItem:       [{ position: 20 }]
+//  @UI.fieldGroup:     [{ position: 20, qualifier: 'BasicGrp' }]
+//  FullName;
+//
+//  @EndUserText.label: 'Fitness Goal'
+//  @UI.lineItem:       [{ position: 30 }]
+//  @UI.fieldGroup:     [{ position: 30, qualifier: 'BasicGrp' }]
+//  FitnessGoal;
+//
+//  @EndUserText.label: 'Health Status'
+//  @UI.selectionField: [{ position: 30 }]
+//  @UI.lineItem:       [{ position: 40, criticality: 'StatusCrit', criticalityRepresentation: #WITH_ICON }]
+//  @UI.dataPoint:      { qualifier: 'HealthData', title: 'Status', criticality: 'StatusCrit' }
+//  HealthStatus;
+//
+//  @EndUserText.label: 'Current Weight'
+//  @UI.lineItem:       [{ position: 50 }]
+//  @UI.fieldGroup:     [{ position: 40, qualifier: 'BasicGrp' }]
+//  CurrentWeight;
+//
+//  @EndUserText.label: 'Target Weight'
+//  @UI.fieldGroup:     [{ position: 50, qualifier: 'BasicGrp' }]
+//  TargetWeight;
+//}
+//@Metadata.layer: #CORE
+//@UI: { headerInfo: { typeName: 'Fitness Profile', typeNamePlural: 'Profiles', title: { value: 'FullName' } } }
+//annotate entity ZC_FIT_PROF_H_157 with
+//{
+//  @UI.facet: [ 
+//    { id: 'HealthDP', purpose: #HEADER, type: #DATAPOINT_REFERENCE, targetQualifier: 'HealthData', position: 10 },
+//    { id: 'ProfInfo', type: #COLLECTION, label: 'Profile Details', position: 10 },
+//    { id: 'BasicData', parentId: 'ProfInfo', type: #FIELDGROUP_REFERENCE, label: 'Metrics', targetQualifier: 'BasicGrp', position: 10 },
+//    { id: 'Logs', type: #LINEITEM_REFERENCE, label: 'Activity Logs', position: 20, targetElement: '_Activities' } 
+//  ]
+//
+//  @EndUserText.label: 'User ID'
+//  @UI.selectionField: [{ position: 10 }]
+//  @UI.lineItem:       [{ position: 10 }]
+//  @UI.fieldGroup:     [{ position: 10, qualifier: 'BasicGrp' }]
+//  UserId;
+//
+//  @EndUserText.label: 'Full Name'
+//  @UI.selectionField: [{ position: 20 }]
+//  @UI.lineItem:       [{ position: 20 }]
+//  @UI.fieldGroup:     [{ position: 20, qualifier: 'BasicGrp' }]
+//  FullName;
+//
+//  @EndUserText.label: 'Fitness Goal'
+//  @UI.lineItem:       [{ position: 30 }]
+//  @UI.fieldGroup:     [{ position: 30, qualifier: 'BasicGrp' }]
+//  FitnessGoal;
+//
+//  @EndUserText.label: 'Health Status'
+//  @UI.selectionField: [{ position: 30 }]
+//  @UI.lineItem:       [{ position: 40, criticality: 'StatusCrit', criticalityRepresentation: #WITH_ICON }]
+//  @UI.dataPoint:      { qualifier: 'HealthData', title: 'Status', criticality: 'StatusCrit' }
+//
+//  @UI.fieldGroup:     [{ position: 35, qualifier: 'BasicGrp' }] 
+//  HealthStatus;
+//
+//  @EndUserText.label: 'Current Weight'
+//  @UI.lineItem:       [{ position: 50 }]
+//  @UI.fieldGroup:     [{ position: 40, qualifier: 'BasicGrp' }]
+//  CurrentWeight;
+//
+//  @EndUserText.label: 'Target Weight'
+//  @UI.fieldGroup:     [{ position: 50, qualifier: 'BasicGrp' }]
+//  TargetWeight;
+//  @UI.hidden: true
+//  StatusCrit; 
+//}
+//@Metadata.layer: #CORE
+//@UI: { headerInfo: { typeName: 'Fitness Profile', typeNamePlural: 'Profiles', title: { value: 'FullName' } } }
+//annotate entity ZC_FIT_PROF_H_157 with
+//{
+//  @UI.facet: [ 
+//    { id: 'HealthDP', purpose: #HEADER, type: #DATAPOINT_REFERENCE, targetQualifier: 'HealthData', position: 10 },
+//    { id: 'ProfInfo', type: #COLLECTION, label: 'Profile Details', position: 10 },
+//    { id: 'BasicData', parentId: 'ProfInfo', type: #FIELDGROUP_REFERENCE, label: 'Metrics', targetQualifier: 'BasicGrp', position: 10 },
+//    { id: 'Logs', type: #LINEITEM_REFERENCE, label: 'Activity Logs', position: 20, targetElement: '_Activities' } 
+//  ]
+//
+//  @EndUserText.label: 'User ID'
+//  @UI.selectionField: [{ position: 10 }]
+//  @UI.lineItem:       [{ position: 10 }]
+//  @UI.fieldGroup:     [{ position: 10, qualifier: 'BasicGrp' }]
+//  UserId;
+//
+//  @EndUserText.label: 'Full Name'
+//  @UI.selectionField: [{ position: 20 }]
+//  @UI.lineItem:       [{ position: 20 }]
+//  @UI.fieldGroup:     [{ position: 20, qualifier: 'BasicGrp' }]
+//  FullName;
+//
+//  @EndUserText.label: 'Fitness Goal'
+//  @UI.lineItem:       [{ position: 30 }]
+//  @UI.fieldGroup:     [{ position: 30, qualifier: 'BasicGrp' }]
+//  FitnessGoal;
+//
+//  @EndUserText.label: 'Health Status'
+//  @UI.selectionField: [{ position: 30 }]
+//  @UI.lineItem:       [{ position: 40, criticality: 'StatusCrit', criticalityRepresentation: #WITH_ICON }]
+//  @UI.dataPoint:      { qualifier: 'HealthData', title: 'Status', criticality: 'StatusCrit' }
+//  @UI.fieldGroup:     [{ position: 35, qualifier: 'BasicGrp' }] 
+//  HealthStatus;
+//
+//  @EndUserText.label: 'Current Weight'
+//
+//  @UI.lineItem:       [{ position: 50, criticality: 'WeightCrit', criticalityRepresentation: #WITHOUT_ICON }]
+//  @UI.fieldGroup:     [{ position: 40, qualifier: 'BasicGrp' }]
+//  CurrentWeight;
+//
+//  @EndUserText.label: 'Target Weight'
+//  @UI.fieldGroup:     [{ position: 50, qualifier: 'BasicGrp' }]
+//  TargetWeight;
+//  
+//  @UI.hidden: true
+//  StatusCrit; 
+//  @UI.hidden: true
+//  WeightCrit;
+//}
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Fitness Profile', typeNamePlural: 'Profiles', title: { value: 'FullName' } } }
+annotate entity ZC_FIT_PROF_H_157 with
+{
+  @UI.facet: [ 
+    { id: 'HealthDP', purpose: #HEADER, type: #DATAPOINT_REFERENCE, targetQualifier: 'HealthData', position: 10 },
+    { id: 'ProfInfo', type: #COLLECTION, label: 'Profile Details', position: 10 },
+    { id: 'BasicData', parentId: 'ProfInfo', type: #FIELDGROUP_REFERENCE, label: 'Metrics', targetQualifier: 'BasicGrp', position: 10 },
+    { id: 'Logs', type: #LINEITEM_REFERENCE, label: 'Activity Logs', position: 20, targetElement: '_Activities' } 
+  ]
+
+  @EndUserText.label: 'User ID'
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem:       [{ position: 10 }]
+  @UI.fieldGroup:     [{ position: 10, qualifier: 'BasicGrp' }]
+  UserId;
+
+  @EndUserText.label: 'Full Name'
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem:       [{ position: 20 }]
+  @UI.fieldGroup:     [{ position: 20, qualifier: 'BasicGrp' }]
+  FullName;
+
+  @EndUserText.label: 'Fitness Goal'
+  @UI.lineItem:       [{ position: 30 }]
+  @UI.fieldGroup:     [{ position: 30, qualifier: 'BasicGrp' }]
+  FitnessGoal;
+
+  @EndUserText.label: 'Health Status'
+  @UI.selectionField: [{ position: 30 }]
+  @UI.lineItem:       [{ position: 40, criticality: 'StatusCrit', criticalityRepresentation: #WITH_ICON }]
+  @UI.dataPoint:      { qualifier: 'HealthData', title: 'Status', criticality: 'StatusCrit' }
+  @UI.fieldGroup:     [{ position: 35, qualifier: 'BasicGrp' }] 
+  HealthStatus;
+  @EndUserText.label: 'Current Weight'
+  @UI.dataPoint: { 
+    title: 'Current Weight', 
+    targetValueElement: 'TargetWeight', 
+    visualization: #PROGRESS, 
+    criticality: 'WeightCrit' 
+  }
+  @UI.lineItem:       [{ position: 50, type: #AS_DATAPOINT }]
+  @UI.fieldGroup:     [{ position: 40, qualifier: 'BasicGrp' }]
+  CurrentWeight;
+
+  @EndUserText.label: 'Target Weight'
+  @UI.fieldGroup:     [{ position: 50, qualifier: 'BasicGrp' }]
+  TargetWeight;
+  
+  @UI.hidden: true
+  StatusCrit; 
+
+  @UI.hidden: true
+  WeightCrit;
+}
